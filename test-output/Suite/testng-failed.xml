@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="chromeTest">
+    <classes>
+      <class name="com.test.Test9">
+        <methods>
+          <exclude name="m1"/>
+          <exclude name="m4"/>
+        </methods>
+      </class> <!-- com.test.Test9 -->
+    </classes>
+  </test> <!-- chromeTest -->
+  <test thread-count="5" name="FirefoxTest">
+    <groups>
+      <run>
+        <include name="Regrssion"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.test.Test9"/>
+      <class name="com.test.Test10"/>
+    </classes>
+  </test> <!-- FirefoxTest -->
+</suite> <!-- Failed suite [Suite] -->

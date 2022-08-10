@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests">
+
+	<test thread-count="5" name="chromeTest">
+		<classes>
+			<class name="com.test.Test9">
+				<methods>
+					<!-- <include name="m1"></include> -->
+					<exclude name="m1"></exclude>
+					<exclude name="m4"></exclude>
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+
+	<test thread-count="5" name="FirefoxTest">
+		<groups>
+			<run>
+				<include name="Regrssion"></include>
+			</run>
+		</groups>
+
+		<classes>
+
+			<class name="com.test.Test9" />
+			<class name="com.test.Test10" />
+		</classes>
+	</test>
+
+
+</suite>

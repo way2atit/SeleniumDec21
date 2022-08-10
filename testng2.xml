@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">  <!-- BS-6 -->
+  
+  <test thread-count="5" name="SmokeTest1">  <!-- //BT -6 -->
+    <classes>      
+      <class name="com.test.Test4"/>   <!-- m1  -->       
+      <class name="com.test.Test6"/>     
+    </classes>    
+  </test>  <!-- //  AT -6 -->
+  
+   <test thread-count="5" name="RegressionTest2"> 
+    <classes>      
+      <class name="com.test.Test4"/>  <!-- m1 -->
+      <class name="com.test.Test5"/>    <!-- m2    -->    
+    </classes>    
+  </test>
+  
+  
+</suite> <!--  //AS-6  -->
